@@ -81,6 +81,6 @@ ggplot(exp_source, aes(x = know_source, y = as.numeric(expertise), color = know_
   
 exp_source_outliers <- trimdata_factors_clean %>%
   mutate(expertise = as.integer(expertise)) %>%
-  filter(expertise > 7) %>%
+  filter(expertise > 9) %>%
   filter(str_detect(know_source, "no"))
 
